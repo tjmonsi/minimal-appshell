@@ -5,5 +5,10 @@
     ]
   },
   "entrypoint": "index.html",
-  "shell": "project_components/minimal-appshell-app/minimal-appshell-app.html"
+  "shell": "project_components/minimal-appshell-app/minimal-appshell-app.html",
+  "sources": [
+    "images/**/*",
+    "app.js",
+    "manifest.json"
+  ]
 }

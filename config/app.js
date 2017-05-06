@@ -4,7 +4,8 @@ const buildsPath = 'config/builds'
 const buildsArray = fs.readdirSync(buildsPath).filter(file => fs.statSync(path.join(buildsPath, file)).isDirectory())
 
 const builds = {
-  dev: 'dev'
+  dev: 'dev',
+  production: 'production'
 }
 
 exports.builds = builds

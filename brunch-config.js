@@ -1,8 +1,16 @@
 // See http://brunch.io for documentation.
 const stylesheets = {joinTo: {'app.css': 'app/styles.css'}}
-const javascripts = {joinTo: {'app.js': [
-  /^app\/scripts/
-]}}
+const javascripts = {
+  joinTo: {
+    'app.js': [
+      /^app\/scripts/
+    ],
+    'vendor.js': [
+      /^node_modules/  
+    ]
+  }
+    
+}
 const config = require('./config/app')
 
 const brunchStaticProcessor = (build) => {

@@ -11,7 +11,10 @@
     "polymer-build": "rm -r build && cd temp_build && polymer build --js-compile --js-minify --css-minify --html-minify --add-service-worker --bundle && mv build ../build",
     "build": "export LOGGY_STACKS=true && brunch build --production && npm run polymer-build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0"
+  },
   "devDependencies": {
     "auto-reload-brunch": "^2",
     "babel-eslint": "^7.2.3",
